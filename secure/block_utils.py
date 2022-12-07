@@ -237,21 +237,3 @@ def matrix_mult(a, b):
             m[j][k] = res
 
     return m
-
-"""
-class PacketStream:
-    functions = (
-
-    )
-
-    def __init__(self, source, source_type):
-        self.buffer = []
-        self.source = source
-        self.__parse__ = functions[source_type]
-
-    def __next__(self):
-        if len(self.buffer == 0):
-            self.__parse__()
-        return self.buffer.pop(0)
-"""
-

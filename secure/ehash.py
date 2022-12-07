@@ -231,30 +231,3 @@ class MyHash:
                 ret = ret << 8 ^ i
 
         return ret
-
-
-"""
-my_hash1 = MyHash()
-my_hash2 = MyHash()
-"""
-"""
-my_hash1.set_internal_matrix("2644018047581211400585215085181721409693417654472581102520728261574290329269")
-my_hash2.set_internal_matrix("2644018047581211400585215085181721409693417654472581102520728261574290329268")
-print(packet_to_alpha_numeric(my_hash1.internal_matrix))
-print(packet_to_alpha_numeric(my_hash2.internal_matrix))
-"""
-"""
-my_hash1.set_internal_matrix("username")
-my_hash2.set_internal_matrix("username")
-print(packet_to_alpha_numeric(my_hash1.internal_matrix))
-hash1 = my_hash1.hash_packs(string_to_packets("1234"), 8)
-hash2 = my_hash2.hash_packs(string_to_packets("1235"), 8)
-print(packet_to_alpha_numeric(hash1))
-print(packet_to_alpha_numeric(hash2))
-"""
-"""
-hash1 = my_hash1.hash_packs(packets_from_file("random_data.txt"), 0)
-hash2 = my_hash1.hash_packs(packets_from_file("random_data.txt"), 0)
-print(packet_to_alpha_numeric(hash1))
-print(packet_to_alpha_numeric(hash2))
-"""

@@ -114,6 +114,3 @@ def galois_big_inv(a, mod=2**256):
         j = gf_degree(a) - gf_degree(v)
         # print(a, g1)
     return g1
-
-
-
